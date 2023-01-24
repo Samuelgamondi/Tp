@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - Tandil Academy</title>
+    <link rel="stylesheet" href="stylesheets\style2.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="school-name">
+            <a href="home.html"><img class="logo" src="images/TandilAcademy.png"  alt="Tandil Academy"></a>
+        </div>
+        <div class="btn-menu"><a>MENU</a></div>
+        <div class="nav">    
+            <nav>
+                <ul class="ul-nav">
+                    <li class="nav-item"><a href="home.html">Inicio</a></li>
+                    <li class="nav-item"><a href="facilities.html">Instalaciones</a></li>
+                    <li class="nav-item"><a href="timetable.html">Inscriptos</a></li>
+                    <li class="nav-item"><a href="inscription.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-container">
+            <p class="timep">Aquí podrá ver los alumnos inscriptos</p>
+            
+            <div class="agregar">
+                <input type="text" id="nombre1" placeholder="Nombre">
+                <input type="text" id="dni" placeholder="DNI">
+                <input type="text" id="curso" placeholder="Curso">
+                <button id="AgregarAl">Agregar</button>
+
+            </div>
+            
+    <table>
+        <thead>
+         <tr>
+                <th>Nº de Inscripto</th>
+                <th>Alumno</th>
+                <th>DNI</th>
+                <th>Curso</th>       
+         </tr>
+        </thead>
+        <tbody id="cuerpotabla">
+                 
+        </tbody>
+
+    </table>
+    <div class="editar">
+        
+        <input type="text" id="id_editar" placeholder="Nº de inscripto">
+        <input id="inputEditId" type="hidden" name="id"  required >
+        <input id="inputEditnombre" type="text" name="nombre" placeholder="Nombre" required >
+        <input id="inputEditdni" type="text" name="dni" placeholder="DNI" required>
+        <input id="inputEditcurso" type="text" name="curso" placeholder="Curso" required>
+    
+        
+    </div>
+    <div class="btns">
+        <button id="borrar">Borrar</button>
+    </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="js/tabla.js"></script>
+</html>

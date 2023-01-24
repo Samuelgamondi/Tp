@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Tandil Academy</title>
+    <link rel="stylesheet" href="stylesheets\style2.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="school-name">
+            <a href="home.html"><img class="logo" src="images/TandilAcademy.png"  alt="Tandil Academy"></a>
+        </div>
+        <div class="btn-menu"><a>MENU</a></div>
+        <div class="nav">    
+            <nav>
+                <ul class="ul-nav">
+                    <li class="nav-item"><a href="home.html">Inicio</a></li>
+                    <li class="nav-item"><a href="facilities.html">Instalaciones</a></li>
+                    <li class="nav-item"><a href="timetable.html">Inscriptos</a></li>
+                    <li class="nav-item"><a href="inscription.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+        <p class="p-inscription">Nuestro primer contacto con las familias de los ingresantes se produce a través de una entrevista y un recorrido por las instalaciones del colegio. Este encuentro es la oportunidad para brindar detalladamente la información de la propuesta educativa y profundizar en los aspectos que cada familia considere de interés sobre el porvenir escolar.</p>
+
+        <div class="content-container">
+            <form class="inscription-form" action="">
+                <label for="fname">Nombre(s)</label>
+                <input required type="text" id="fname" name="fname">
+                <label for="lname">Apellido(s)</label>
+                <input required type="text" id="lname" name="lname">
+                <label for="bday">Fecha de nacimiento</label>
+                <input required type="date" id="bday" name="bday">
+                <label for="email">E-mail</label>
+                <input required type="email" id="email" name="email">
+                <p>Ingrese el código (respetando mayúsculas) que se muestra a continuación:</p>
+                <p id="captcha"></p>
+                <label for="valorcaptcha">Verifiación de seguridad</label>
+                <input required type="text" id="valorCaptcha"/>
+                <p id="resultado"></p>
+                <input type="button" id="botonCaptcha" value="Enviar"/>
+                
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/captcha.js"></script>
+</html>
